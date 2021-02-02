@@ -1,5 +1,5 @@
 
-def queryUser(username):
+def query_user(username):
     print(f"Welcome to Coeus {username}!")
     movie_input = input("What movie would you like to search up?")
     return movie_input
