@@ -19,7 +19,8 @@ class MovieListBuilder:
         title = result_at_index['original_title']
         release_date = self.get_year(result_at_index['release_date'])
         rating = result_at_index['vote_average']
-        movie = Movie(title, release_date, rating)
+        movie_id = result_at_index['id']
+        movie = Movie(title, release_date, rating, movie_id)
         return movie
 
     def get_year(self, full_date):
